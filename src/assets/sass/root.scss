@@ -481,7 +481,7 @@
       /* prevents padding from affecting height and width */
       box-sizing: border-box;
       padding: calc(16 / 16 * 1rem) calc(24 / 16 * 1rem);
-      background-color: #f7f7f7;
+      background-color: var(--secondary);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -504,7 +504,7 @@
       line-height: 1.5em;
       text-decoration: none;
       margin: 0;
-      color: var(--bodyTextColor);
+      color: var(--white);
       display: flex;
       justify-content: flex-start;
       align-items: center;
