@@ -1,8 +1,8 @@
 module.exports = {
-  name: "Code Stitch Web Designs",
-  email: "help@codestitch.app",
-  phoneForTel: "555-779-4407",
-  phoneFormatted: "(555) 779-4407",
+  name: "Rick's Mobile RV Service",
+  email: "service@ricksmobilervservice.com",
+  phoneForTel: "770-540-7462",
+  phoneFormatted: "(770) 540-7462",
   address: {
     lineOne: "First Address Line",
     lineTwo: "Second Address Line",
