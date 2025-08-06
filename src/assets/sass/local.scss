@@ -892,12 +892,29 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #reviews-67 {
+  #reviews-864 {
+    background-color: var(--lighter);
     padding: var(--sectionPadding);
+    position: relative;
+    z-index: 1;
+
+    &:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: var(--primary);
+      opacity: 0.03;
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
 
     .cs-container {
       width: 100%;
-      max-width: calc(1280 / 16 * 1rem);
+      /* changes to 1280px at tablet */
+      max-width: calc(550 / 16 * 1rem);
       margin: auto;
       display: flex;
       flex-direction: column;
@@ -910,148 +927,180 @@
       /* set text align to left if content needs to be left aligned */
       text-align: center;
       width: 100%;
+      max-width: calc(900 / 16 * 1rem);
       display: flex;
       flex-direction: column;
       /* centers content horizontally, set to flex-start to left align */
       align-items: center;
     }
 
+    .cs-title {
+      /* 20 characters including spaces */
+      max-width: 20ch;
+    }
+
+    .cs-text {
+      max-width: 100%;
+    }
+
     .cs-card-group {
       padding: 0;
       margin: 0;
-      display: flex;
-      flex-direction: column;
-      column-gap: calc(20 / 16 * 1rem);
-      row-gap: calc(64 / 16 * 1rem);
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      /* 16px - 20px */
+      gap: clamp(1rem, 2.5vw, 1.15rem);
     }
 
     .cs-item {
-      text-align: left;
       list-style: none;
       width: 100%;
-      max-width: calc(630 / 16 * 1rem);
-      /* pushes up the same amount the cs-item-img overlaps the card */
-      margin: calc(40 / 16 * 1rem) 0 0 0;
-      /* Padding L & R - 16px - 32px */
-      padding: calc(60 / 16 * 1rem) clamp(1rem, 3.2vw, 2rem) 0;
-      /* 32px - 40px */
-      padding-bottom: clamp(2rem, 5.4vw, 2.5rem);
-      box-shadow: 0px 20px 39px 0px rgba(0, 0, 0, 0.05);
-      border-radius: calc(8 / 16 * 1rem);
-      background: #fff;
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      align-items: center;
-      /* Prevents padding from affecting height & width */
+      /* 20px - 32px */
+      padding: clamp(1.25rem, 4vw, 2rem);
+      background-color: #fff;
+      border-radius: var(--borderRounded);
+      box-shadow: var(--shadow);
+      /* prevents padding from adding to height and width */
       box-sizing: border-box;
-
-      &:last-of-type {
-        margin-bottom: 0;
-      }
-    }
-
-    .cs-item-img {
-      width: calc(80 / 16 * 1rem);
-      height: calc(80 / 16 * 1rem);
-      position: absolute;
-      top: calc(-40 / 16 * 1rem);
-    }
-
-    .cs-item-text {
-      font-size: calc(16 / 16 * 1rem);
-      line-height: 1.5em;
-      margin: 0 0 calc(20 / 16 * 1rem);
-      padding-bottom: calc(20 / 16 * 1rem);
-      color: var(--bodyTextColor);
-      border-bottom: 1px solid #e8e9ec;
-    }
-
-    .cs-info {
-      width: 100%;
-      /* margin-top auto pushes up against the rest of the card, that way when one card has more text than the other, the reviewer info is always pushed to the bottom and lined up with the rest of them.  This ensures better responsiveness for changing content */
-      margin: auto 0 0 0;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      grid-column: span 12;
+      position: relative;
     }
 
     .cs-flex-group {
       width: 100%;
-      margin: 0;
+      margin: 0 0 calc(20 / 16 * 1rem) 0;
+      padding-bottom: calc(20 / 16 * 1rem);
+      border-bottom: 1px solid var(--primary);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: calc(20 / 16 * 1rem);
+    }
+
+    .cs-profile {
+      width: calc(64 / 16 * 1rem);
+      height: calc(64 / 16 * 1rem);
+      border-radius: 50%;
+      /* clips image corners to make circle */
+      overflow: hidden;
+      position: relative;
+      display: block;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* makes the image behave like a background image */
+        object-fit: cover;
+      }
     }
 
     .cs-name {
-      font-size: calc(16 / 16 * 1rem);
+      /* 20px - 25px */
+      font-size: clamp(1.25rem, 2vw, 1.5625rem);
       line-height: 1.5em;
       font-weight: 700;
-      width: 40%;
-      margin: 0;
-      display: block;
+      margin: 0 0 calc(8 / 16 * 1rem) 0;
       color: var(--headerColor);
+      display: block;
+    }
+
+    .cs-job {
+      font-size: calc(14 / 16 * 1rem);
+      line-height: 1.2em;
+      font-weight: 400;
+      margin: 0;
+      color: var(--bodyTextColor);
+      display: block;
+    }
+
+    .cs-review {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      line-height: 1.5em;
+      margin: 0;
+      margin-bottom: calc(20 / 16 * 1rem);
+      max-width: calc(444 / 16 * 1rem);
+      color: var(--bodyTextColor);
+    }
+
+    .cs-stars {
+      width: calc(108 / 16 * 1rem);
+      height: auto;
+      margin: 0 0 calc(8 / 16 * 1rem) 0;
+      display: block;
     }
 
     .cs-desc {
-      font-size: calc(14 / 16 * 1rem);
-      font-weight: 400;
-      color: #7d799c;
-      display: block;
-    }
-
-    .cs-item-stars {
-      width: calc(96 / 16 * 1rem);
-      height: calc(16 / 16 * 1rem);
-    }
-
-    .cs-button-solid {
-      font-size: calc(16 / 16 * 1rem);
-      /* 46px - 56px */
-      line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-      text-decoration: none;
-      font-weight: 700;
-      text-align: center;
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      line-height: 1.5em;
+      text-align: inherit;
       margin: 0;
-      color: #fff;
-      min-width: calc(150 / 16 * 1rem);
-      padding: 0 calc(24 / 16 * 1rem);
-      background-color: var(--primary);
-      border-radius: calc(4 / 16 * 1rem);
-      display: inline-block;
-      position: relative;
-      z-index: 1;
-      /* prevents padding from adding to the width */
-      box-sizing: border-box;
+      color: var(--bodyTextColor);
+    }
 
-      &:before {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 0%;
-        background: #000;
-        opacity: 1;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        border-radius: calc(4 / 16 * 1rem);
-        transition: width 0.3s;
-      }
+    .cs-quote1,
+    .cs-quote2 {
+      display: none;
+      width: calc(194 / 16 * 1rem);
+      height: auto;
+      display: block;
+      position: absolute;
+      z-index: -1;
+    }
 
-      &:hover {
-        &:before {
-          width: 100%;
-        }
-      }
+    .cs-quote1 {
+      top: 0;
+      left: 0;
+    }
+
+    .cs-quote2 {
+      bottom: 0;
+      right: 0;
     }
   }
 }
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #reviews-67 {
-    .cs-card-group {
-      flex-direction: row;
-      justify-content: space-between;
+  #reviews-864 {
+    .cs-container {
+      max-width: calc(1280 / 16 * 1rem);
+    }
+
+    .cs-item {
+      grid-column: span 6;
+      &:last-of-type {
+        grid-column: span 12;
+      }
+    }
+
+    .cs-stars {
+      margin-top: auto;
+    }
+
+    .cs-quote1,
+    .cs-quote2 {
+      display: block;
+    }
+  }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #reviews-864 {
+    .cs-item {
+      grid-column: span 4;
+      &:last-of-type {
+        grid-column: span 4;
+      }
     }
   }
 }
@@ -1059,20 +1108,34 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode {
-    #reviews-67 {
+    #reviews-864 {
+      background-color: var(--medium);
       .cs-title,
       .cs-text,
-      .cs-item-text,
-      .cs-name {
+      .cs-review,
+      .cs-name,
+      .cs-job,
+      .cs-desc {
         color: var(--bodyTextColorWhite);
       }
 
-      .cs-item {
-        background: rgba(0, 0, 0, 0.2);
+      .cs-text,
+      .cs-desc {
+        opacity: 0.8;
       }
 
-      .cs-desc {
-        color: var(--primaryLight);
+      .cs-item {
+        // background-color: rgba(#000, 20%);
+        background-color: var(--accent);
+      }
+
+      .cs-flex-group {
+        border-color: var(--accent);
+      }
+
+      .cs-quote1,
+      .cs-quote2 {
+        opacity: 0.2;
       }
     }
   }
