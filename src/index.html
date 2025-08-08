@@ -19,11 +19,14 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
 />
 <noscript>
   <link rel="stylesheet" href="/assets/css/local.css" />
+  <link rel="stylesheet" href="/assets/css/contact-form.css" />
 </noscript>
 
 {% else %}
 <link rel="stylesheet" href="/assets/css/local.css" />
+<link rel="stylesheet" href="/assets/css/contact-form.css" />
 {% endif %}
+<script src="/assets/js/file-upload.js" defer></script>
 
 <!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customising  -->
 <!-- Uncomment the code below to enable Structured Data, and test it when you deploy to Netlify - https://developers.google.com/search/docs/appearance/structured-data -->
@@ -1056,4 +1059,4 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
   </div>
 </section>
 
-{% include 'sections/cta.html' %} {% endblock %}
+{% include 'sections/contact-form.html' %} {% endblock %}
