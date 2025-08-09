@@ -270,6 +270,10 @@
       color: var(--bodyTextColorWhite);
     }
 
+    .cs-topper {
+      color: var(--primary);
+    }
+
     .cs-container {
       width: 100%;
       /* changes to 1280px at desktop */
@@ -477,6 +481,7 @@
 @media only screen and (min-width: 0rem) {
   #sbs-311 {
     padding: var(--sectionPadding);
+    background-color: var(--light);
 
     .cs-container {
       width: 100%;
