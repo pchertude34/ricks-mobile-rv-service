@@ -1,8 +1,8 @@
 ---
-title: 'Pixel Perfect Websites | Code Stitch Web Designs | Denver, CO'
-description: 'Meta description for the page'
-permalink: '/'
-tags: 'sitemap' # content/content.json will make sure that all pages in content/ are marked with a "sitemap" tag, for automatic sitemap generation. As index.html is not in content/, we need to add it here to ensure the root page is included in the sitemap generation
+title: "Pixel Perfect Websites | Code Stitch Web Designs | Denver, CO"
+description: "Meta description for the page"
+permalink: "/"
+tags: "sitemap" # content/content.json will make sure that all pages in content/ are marked with a "sitemap" tag, for automatic sitemap generation. As index.html is not in content/, we need to add it here to ensure the root page is included in the sitemap generation
 ---
 
 {% extends "layouts/base.html" %} {% block head %}
@@ -11,12 +11,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
 
 <!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
 {% if kit.isProduction %}
-<link
-  rel="preload"
-  href="/assets/css/local.css"
-  as="style"
-  onload="this.onload=null;this.rel='stylesheet'"
-/>
+<link rel="preload" href="/assets/css/local.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
 <noscript>
   <link rel="stylesheet" href="/assets/css/local.css" />
   <link rel="stylesheet" href="/assets/css/contact-form.css" />
@@ -42,8 +37,8 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
     <div class="cs-content">
       <h1 class="cs-title">RV Repair Service</h1>
       <p class="cs-text">
-        Rick’s Mobile RV Service is here for you. We help our clients and provide them with the best
-        RV Upgrades, Repair and Maintenance Service
+        Rick’s Mobile RV Service is here for you. We help our clients and provide them with the best RV Upgrades, Repair
+        and Maintenance Service
       </p>
       <a href="" class="cs-button-solid">Call Us Now</a>
       <div class="cs-reviews" aria-hidden="true">
@@ -55,8 +50,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
             src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile1.png"
             alt="icon"
             width="48"
-            height="48"
-          />
+            height="48" />
           <img
             class="cs-reviews-img"
             decoding="async"
@@ -64,8 +58,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
             src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile2.png"
             alt="icon"
             width="48"
-            height="48"
-          />
+            height="48" />
           <img
             class="cs-reviews-img"
             decoding="async"
@@ -73,8 +66,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
             src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile3.png"
             alt="icon"
             width="48"
-            height="48"
-          />
+            height="48" />
           <img
             class="cs-reviews-img"
             decoding="async"
@@ -82,8 +74,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
             src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile4.png"
             alt="icon"
             width="48"
-            height="48"
-          />
+            height="48" />
           <img
             class="cs-reviews-img"
             decoding="async"
@@ -91,8 +82,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
             src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile5.png"
             alt="icon"
             width="48"
-            height="48"
-          />
+            height="48" />
           <span class="cs-reviews-number">+25</span>
         </div>
       </div>
@@ -104,8 +94,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
           src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg"
           alt="icon"
           width="16"
-          height="16"
-        />
+          height="16" />
         <img
           class="cs-icon"
           decoding="async"
@@ -113,8 +102,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
           src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg"
           alt="icon"
           width="16"
-          height="16"
-        />
+          height="16" />
         <img
           class="cs-icon"
           decoding="async"
@@ -122,8 +110,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
           src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg"
           alt="icon"
           width="16"
-          height="16"
-        />
+          height="16" />
         <img
           class="cs-icon"
           decoding="async"
@@ -131,8 +118,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
           src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg"
           alt="icon"
           width="16"
-          height="16"
-        />
+          height="16" />
         <img
           class="cs-icon"
           decoding="async"
@@ -140,8 +126,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
           src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg"
           alt="icon"
           width="16"
-          height="16"
-        />
+          height="16" />
       </div>
       <p class="cs-desc">Rick's Mobile RV Service is rated 5/5 based on 25+ reviews.</p>
     </div>
@@ -153,9 +138,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
       <div class="cs-flex">
         <h3 class="cs-h3">Get an Extra 5% OFF Your First Order Today</h3>
         <span class="cs-expires">*Offer Expires April 16th</span>
-        <p class="cs-form-text">
-          Request a free* No-Obligation quote & expert advice from our expert team!
-        </p>
+        <p class="cs-form-text">Request a free* No-Obligation quote & expert advice from our expert team!</p>
       </div>
       <!--Form-->
       <form class="cs-form" id="cs-form-1467" name="Contact Form" method="post">
@@ -177,12 +160,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
         </label>
         <label class="cs-label cs-message">
           Message
-          <textarea
-            class="cs-input cs-textarea"
-            required
-            name="Message"
-            id="message-1467"
-          ></textarea>
+          <textarea class="cs-input cs-textarea" required name="Message" id="message-1467"></textarea>
         </label>
         <button class="cs-button-solid cs-submit" type="submit">Get Estimate</button>
       </form>
@@ -194,8 +172,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
           src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/lock.svg"
           alt="icon"
           width="20"
-          height="20"
-        />
+          height="20" />
         *Free estimates for homeowners only. Real estate evaluations are billable.
       </p>
     </div>
@@ -209,52 +186,45 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
       srcset="
                     {% getUrl '/assets/images/hero.jpg' | resize({ width: 640, height: 1500, position: 'attention' }) | avif %}
                 "
-      type="image/avif"
-    />
+      type="image/avif" />
     <source
       media="(max-width: 600px)"
       srcset="
                     {% getUrl '/assets/images/hero.jpg' | resize({ width: 640, height: 1500, position: 'attention' }) | webp %}
                 "
-      type="image/webp"
-    />
+      type="image/webp" />
     <source
       media="(max-width: 600px)"
       srcset="
                     {% getUrl '/assets/images/hero.jpg' | resize({ width: 640, height: 1500, position: 'attention' }) | jpeg %}
                 "
-      type="image/jpeg"
-    />
+      type="image/jpeg" />
     <!--Tablet Image-->
     <source
       media="(min-width: 601px)"
       srcset="
                     {% getUrl '/assets/images/hero.jpg' | resize({ width: 2250, height: 1500, position: 'attention' }) | avif %}
                 "
-      type="image/avif"
-    />
+      type="image/avif" />
     <source
       media="(min-width: 601px)"
       srcset="
                     {% getUrl '/assets/images/hero.jpg' | resize({ width: 2250, height: 1500, position: 'attention' }) | webp %}
                 "
-      type="image/webp"
-    />
+      type="image/webp" />
     <source
       media="(min-width: 601px)"
       srcset="
                     {% getUrl '/assets/images/hero.jpg' | resize({ width: 2250, height: 1500, position: 'attention' }) | jpeg %}
                 "
-      type="image/jpeg"
-    />
+      type="image/jpeg" />
     <img
       src="{% getUrl '/assets/images/hero.jpg' | resize({ width: 2250, height: 1500, position: 'attention' }) | jpeg %}"
       alt="traveling rv"
       width="2250"
       height="1500"
       decoding="async"
-      aria-hidden="true"
-    />
+      aria-hidden="true" />
   </picture>
 </section>
 
@@ -268,11 +238,10 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
       <span class="cs-topper">Our Services</span>
       <h2 class="cs-title">On-Site RV Repairs & Maintenance</h2>
       <p class="cs-text">
-        At Rick’s Mobile RV Service, we make RV care simple and stress-free. From routine
-        maintenance to major repairs, we bring certified, dependable service straight to your
-        location—no need to wait weeks at a dealership. We offer maintenance scheduling to keep your
-        RV in top shape and work with most warranty and insurance providers to get you back to RVing
-        as quickly as possible.
+        At Rick’s Mobile RV Service, we make RV care simple and stress-free. From routine maintenance to major repairs,
+        we bring certified, dependable service straight to your location—no need to wait weeks at a dealership. We offer
+        maintenance scheduling to keep your RV in top shape and work with most warranty and insurance providers to get
+        you back to RVing as quickly as possible.
       </p>
     </div>
     <ul class="cs-card-group">
@@ -285,13 +254,11 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
             src="assets/icons/pipes.svg"
             alt="pipes"
             width="48"
-            height="48"
-          />
+            height="48" />
         </picture>
         <h3 class="cs-h3">RV Plumbing Services</h3>
         <p class="cs-item-text">
-          We repair and maintain RV plumbing systems—including tanks, water heaters, and leaks—right
-          at your location
+          We repair and maintain RV plumbing systems—including tanks, water heaters, and leaks—right at your location
         </p>
         <a href="" class="cs-link">
           Read More
@@ -303,8 +270,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
             alt="icon"
             width="20"
             height="20"
-            aria-hidden="true"
-          />
+            aria-hidden="true" />
         </a>
       </li>
 
@@ -317,13 +283,12 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
             src="assets/icons/electrical-panel.svg"
             alt="electrical panel"
             width="48"
-            height="48"
-          />
+            height="48" />
         </picture>
         <h3 class="cs-h3">RV Electrical Services</h3>
         <p class="cs-item-text">
-          We deliver on-site diagnostics, wiring repairs, upgrades, and battery/inverter
-          inspections—keeping your RV’s electrical systems reliable.
+          We deliver on-site diagnostics, wiring repairs, upgrades, and battery/inverter inspections—keeping your RV’s
+          electrical systems reliable.
         </p>
         <a href="" class="cs-link">
           Read More
@@ -335,8 +300,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
             alt="icon"
             width="20"
             height="20"
-            aria-hidden="true"
-          />
+            aria-hidden="true" />
         </a>
       </li>
       <li class="cs-item">
@@ -348,13 +312,12 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
             src="assets/icons/air-conditioning.svg"
             alt="air conditioning"
             width="48"
-            height="48"
-          />
+            height="48" />
         </picture>
         <h3 class="cs-h3">RV Appliances, A/C, Furnace</h3>
         <p class="cs-item-text">
-          We repair and maintain your RV’s refrigerators, stoves, microwaves, water heaters, A/C
-          units, furnaces, and thermostats.
+          We repair and maintain your RV’s refrigerators, stoves, microwaves, water heaters, A/C units, furnaces, and
+          thermostats.
         </p>
         <a href="" class="cs-link">
           Read More
@@ -366,8 +329,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
             alt="icon"
             width="20"
             height="20"
-            aria-hidden="true"
-          />
+            aria-hidden="true" />
         </a>
       </li>
       <li class="cs-item">
@@ -379,13 +341,10 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
             src="assets/icons/rv.svg"
             alt="rv"
             width="48"
-            height="48"
-          />
+            height="48" />
         </picture>
         <h3 class="cs-h3">RV Structural Services</h3>
-        <p class="cs-item-text">
-          We repair roofs, slide‑outs, seals, and jacks—on-site and on your schedule.
-        </p>
+        <p class="cs-item-text">We repair roofs, slide‑outs, seals, and jacks—on-site and on your schedule.</p>
         <a href="" class="cs-link">
           Read More
           <img
@@ -396,8 +355,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
             alt="icon"
             width="20"
             height="20"
-            aria-hidden="true"
-          />
+            aria-hidden="true" />
         </a>
       </li>
       <li class="cs-item">
@@ -409,13 +367,11 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
             src="assets/icons/tools.svg"
             alt="tools"
             width="48"
-            height="48"
-          />
+            height="48" />
         </picture>
         <h3 class="cs-h3">RV Upgrades & Maintenance</h3>
         <p class="cs-item-text">
-          We provide on-site maintenance and install upgrades to keep your RV running smoothly and
-          up to date.
+          We provide on-site maintenance and install upgrades to keep your RV running smoothly and up to date.
         </p>
         <a href="" class="cs-link">
           Read More
@@ -427,8 +383,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
             alt="icon"
             width="20"
             height="20"
-            aria-hidden="true"
-          />
+            aria-hidden="true" />
         </a>
       </li>
     </ul>
@@ -444,24 +399,20 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
     <!-- Left Content Section-->
     <div class="cs-content">
       <span class="cs-topper">About Us</span>
-      <h2 class="cs-title">About Mountain Top Mobile RV Repair</h2>
+      <h2 class="cs-title">A Family-Owned Mobile RV Repair Team</h2>
       <p class="cs-text">
-        With 25 years of camping experience, we know things break. Leaks happen. Roofs and floors
-        deteriorate. Slide-outs get stuck. Wiring issues, ac and furnace, appliances and more.
+        With 25 years of camping experience, we know things break. Leaks happen. Roofs and floors deteriorate.
+        Slide-outs get stuck. Wiring issues, ac and furnace, appliances and more.
       </p>
       <p class="cs-text">
-        But we don’t let that slow down our passion RVing! And we don’t want it to slow you down
-        either!
+        But we don’t let that slow down our passion RVing! And we don’t want it to slow you down either!
       </p>
       <p class="cs-text">
-        Over the years we’ve helped full-time families, retirees, travel workers, road warriors,
-        vacationers, and all sorts of RVers who live here and pass through our beautiful region!
+        Over the years we’ve helped full-time families, retirees, travel workers, road warriors, vacationers, and all
+        sorts of RVers who live here and pass through our beautiful region!
       </p>
       <p class="cs-text">How can we help make RVing better for you?</p>
-      <a
-        class="cs-button-solid"
-        aria-label="learn more about Mountain Top Mobile RV Repair"
-        href="/about/"
+      <a class="cs-button-solid" aria-label="learn more about Mountain Top Mobile RV Repair" href="/about/"
         >More About Us</a
       >
     </div>
@@ -482,52 +433,45 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
           srcset="
                           {% getUrl '/assets/images/about-us.png' | resize({ width: 1136, height: 1062, position: 'attention' }) | avif %}
                       "
-          type="image/avif"
-        />
+          type="image/avif" />
         <source
           media="(max-width: 600px)"
           srcset="
                           {% getUrl '/assets/images/about-us.png' | resize({ width: 1136, height: 1062, position: 'attention' }) | webp %}
                       "
-          type="image/webp"
-        />
+          type="image/webp" />
         <source
           media="(max-width: 600px)"
           srcset="
                           {% getUrl '/assets/images/about-us.png' | resize({ width: 1136, height: 1062, position: 'attention' }) | jpeg %}
                       "
-          type="image/jpeg"
-        />
+          type="image/jpeg" />
         <!--Tablet Image-->
         <source
           media="(min-width: 601px)"
           srcset="
                           {% getUrl '/assets/images/about-us.png' | resize({ width: 1260, height: 1260, position: 'attention' }) | avif %}
                       "
-          type="image/avif"
-        />
+          type="image/avif" />
         <source
           media="(min-width: 601px)"
           srcset="
                           {% getUrl '/assets/images/about-us.png' | resize({ width: 1260, height: 1260, position: 'attention' }) | webp %}
                       "
-          type="image/webp"
-        />
+          type="image/webp" />
         <source
           media="(min-width: 601px)"
           srcset="
                           {% getUrl '/assets/images/about-us.png' | resize({ width: 1260, height: 1260, position: 'attention' }) | jpeg %}
                       "
-          type="image/jpeg"
-        />
+          type="image/jpeg" />
         <img
           src="{% getUrl '/assets/images/about-us.png' | resize({ width: 630, height: 630, position: 'attention' }) | jpeg %}"
           alt="traveling rv"
           width="2250"
           height="1500"
           decoding="async"
-          aria-hidden="true"
-        />
+          aria-hidden="true" />
       </picture>
     </div>
   </div>
@@ -547,52 +491,45 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
           srcset="
                     {% getUrl '/assets/images/about-us-2.jpg' | resize({ width: 365, height: 407, position: 'right' }) | avif %}
                 "
-          type="image/avif"
-        />
+          type="image/avif" />
         <source
           media="(max-width: 600px)"
           srcset="
                     {% getUrl '/assets/images/about-us-2.jpg' | resize({ width: 365, height: 407, position: 'right' }) | webp %}
                 "
-          type="image/webp"
-        />
+          type="image/webp" />
         <source
           media="(max-width: 600px)"
           srcset="
                     {% getUrl '/assets/images/about-us-2.jpg' | resize({ width: 365, height: 407, position: 'right' }) | jpeg %}
                 "
-          type="image/jpeg"
-        />
+          type="image/jpeg" />
         <!--Tablet Image-->
         <source
           media="(min-width: 601px)"
           srcset="
                     {% getUrl '/assets/images/about-us-2.jpg' | resize({ width: 522, height: 581, position: 'right' }) | avif %}
                 "
-          type="image/avif"
-        />
+          type="image/avif" />
         <source
           media="(min-width: 601px)"
           srcset="
                     {% getUrl '/assets/images/about-us-2.jpg' | resize({ width: 522, height: 581, position: 'right' }) | webp %}
                 "
-          type="image/webp"
-        />
+          type="image/webp" />
         <source
           media="(min-width: 601px)"
           srcset="
                     {% getUrl '/assets/images/about-us-2.jpg' | resize({ width: 522, height: 581, position: 'right' }) | jpeg %}
                 "
-          type="image/jpeg"
-        />
+          type="image/jpeg" />
         <img
           src="{% getUrl '/assets/images/about-us-2.jpg' | resize({ width: 522, height: 581, position: 'right' }) | jpeg %}"
           alt="Circuit breakers"
           width="400"
           height="240"
           decoding="async"
-          aria-hidden="true"
-        />
+          aria-hidden="true" />
       </picture>
       <picture class="cs-picture cs-picture2">
         <source
@@ -600,52 +537,45 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
           srcset="
                     {% getUrl '/assets/images/about-us-3.jpg' | resize({ width: 274, height: 264, position: 'attention' }) | avif %}
                 "
-          type="image/avif"
-        />
+          type="image/avif" />
         <source
           media="(max-width: 600px)"
           srcset="
                     {% getUrl '/assets/images/about-us-3.jpg' | resize({ width: 274, height: 264, position: 'attention' }) | webp %}
                 "
-          type="image/webp"
-        />
+          type="image/webp" />
         <source
           media="(max-width: 600px)"
           srcset="
                     {% getUrl '/assets/images/about-us-3.jpg' | resize({ width: 274, height: 264, position: 'attention' }) | jpeg %}
                 "
-          type="image/jpeg"
-        />
+          type="image/jpeg" />
         <!--Tablet Image-->
         <source
           media="(min-width: 601px)"
           srcset="
                     {% getUrl '/assets/images/about-us-3.jpg' | resize({ width: 390, height: 376, position: 'attention' }) | avif %}
                 "
-          type="image/avif"
-        />
+          type="image/avif" />
         <source
           media="(min-width: 601px)"
           srcset="
                     {% getUrl '/assets/images/about-us-3.jpg' | resize({ width: 390, height: 376, position: 'attention' }) | webp %}
                 "
-          type="image/webp"
-        />
+          type="image/webp" />
         <source
           media="(min-width: 601px)"
           srcset="
                     {% getUrl '/assets/images/about-us-3.jpg' | resize({ width: 390, height: 376, position: 'attention' }) | jpeg %}
                 "
-          type="image/jpeg"
-        />
+          type="image/jpeg" />
         <img
           src="{% getUrl '/assets/images/about-us-3.jpg' | resize({ width: 390, height: 376, position: 'attention' }) | jpeg %}"
           alt="Circuit breakers"
           width="400"
           height="240"
           decoding="async"
-          aria-hidden="true"
-        />
+          aria-hidden="true" />
       </picture>
     </div>
     <!-- Right Content Section-->
@@ -653,19 +583,18 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
       <span class="cs-topper">Certifications</span>
       <h2 class="cs-title">Is Rickey a Certified RV Tech?</h2>
       <p class="cs-text">
-        Yes! Not only is Rickey RVTAA and NRVTA certified, but Rickey and Sarah are avid campers
-        with more than 25 years of camping experience. They’ve also owned multiple RV and camper
-        types over the years.
+        Yes! Not only is Rickey RVTAA and NRVTA certified, but Rickey and Sarah are avid campers with more than 25 years
+        of camping experience. They’ve also owned multiple RV and camper types over the years.
       </p>
       <p class="cs-text">
-        The personal experience, industry training, certifications, and decades long passion for
-        RVing makes the team the best choice in RV Repair in the Gainesville and north Georgia area.
+        The personal experience, industry training, certifications, and decades long passion for RVing makes the team
+        the best choice in RV Repair in the Gainesville and north Georgia area.
       </p>
       {#
       <div class="cs-quote">
         <span class="cs-quote-text">
-          In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt
-          turpis sit amet imperdiet for mind.
+          In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet
+          imperdiet for mind.
         </span>
         <span class="cs-name">Justin Time</span>
         <span class="cs-job">CEO-Founder</span>
@@ -676,8 +605,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
           src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
           alt="gavel"
           width="136"
-          height="77"
-        />
+          height="77" />
       </div>
       #}
       <a href="" class="cs-button-solid">About Us</a>
@@ -704,8 +632,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
           width="228"
           height="61"
           loading="lazy"
-          decoding="async"
-        />
+          decoding="async" />
       </picture>
       <picture class="cs-picture">
         <img
@@ -715,18 +642,13 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
           width="400"
           height="80"
           loading="lazy"
-          decoding="async"
-        />
+          decoding="async" />
       </picture>
     </div>
   </div>
   <!-- Background Graphic -->
   <picture class="cs-background">
-    <img
-      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/waves5.svg"
-      alt="waves"
-      loading="lazy"
-    />
+    <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/waves5.svg" alt="waves" loading="lazy" />
   </picture>
 </section>
 
@@ -745,44 +667,38 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
           srcset="
                             {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 1200, height: 1136  }) | avif %}
                         "
-          type="image/avif"
-        />
+          type="image/avif" />
         <source
           media="(max-width: 600px)"
           srcset="
                             {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 1200, height: 1136  }) | webp %}
                         "
-          type="image/webp"
-        />
+          type="image/webp" />
         <source
           media="(max-width: 600px)"
           srcset="
                             {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 1200, height: 1136  }) | jpeg %}
                         "
-          type="image/jpeg"
-        />
+          type="image/jpeg" />
         <!--Tablet Image-->
         <source
           media="(min-width: 601)"
           srcset="
                             {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 1000 , height:1458  }) | avif %}
                         "
-          type="image/avif"
-        />
+          type="image/avif" />
         <source
           media="(min-width: 601)"
           srcset="
                             {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 1000 , height:1458  }) | webp %}
                         "
-          type="image/webp"
-        />
+          type="image/webp" />
         <source
           media="(min-width: 601)"
           srcset="
                             {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 1000 , height:1458  }) | jpeg %}
                         "
-          type="image/jpeg"
-        />
+          type="image/jpeg" />
         <img
           src="{% getUrl '/assets/images/why-choose-us.png' | resize({ width: 500 , height: 729  }) | jpeg %}"
           alt="RV camping"
@@ -790,8 +706,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
           height="729"
           loading="lazy"
           decoding="async"
-          aria-hidden="true"
-        />
+          aria-hidden="true" />
       </picture>
     </div>
     <!-- Right Content Section-->
@@ -799,9 +714,8 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
       <span class="cs-topper">Why Choose Us</span>
       <h2 class="cs-title">Why Choose Us As Your Mobile RV Service?</h2>
       <p class="cs-text">
-        Rick’s Mobile RV Service is reliable, dependable, certified and insured. We come to you for
-        your repairs, maintenance or upgrades. We work efficiently to get you back to RVing and
-        enjoying life.
+        Rick’s Mobile RV Service is reliable, dependable, certified and insured. We come to you for your repairs,
+        maintenance or upgrades. We work efficiently to get you back to RVing and enjoying life.
       </p>
       <ul id="list-1186" class="cs-ul">
         <li class="cs-li">
@@ -814,14 +728,13 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
               alt="certified"
               width="30"
               height="30"
-              loading="lazy"
-            />
+              loading="lazy" />
           </picture>
           <div class="cs-flex">
             <h3 class="cs-h3">Certified & Insured Peace of Mind</h3>
             <p class="cs-li-text">
-              You can trust Rick’s Mobile RV Service to get the job done right—backed by
-              professional certification and full insurance coverage.
+              You can trust Rick’s Mobile RV Service to get the job done right—backed by professional certification and
+              full insurance coverage.
             </p>
           </div>
         </li>
@@ -835,14 +748,13 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
               alt="van"
               width="30"
               height="30"
-              loading="lazy"
-            />
+              loading="lazy" />
           </picture>
           <div class="cs-flex">
             <h3 class="cs-h3">We Come to You</h3>
             <p class="cs-li-text">
-              No need to haul your RV to a shop. We bring expert repairs, maintenance, and upgrades
-              directly to your location—saving you time and hassle.
+              No need to haul your RV to a shop. We bring expert repairs, maintenance, and upgrades directly to your
+              location—saving you time and hassle.
             </p>
           </div>
         </li>
@@ -856,14 +768,13 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
               alt="clock"
               width="30"
               height="30"
-              loading="lazy"
-            />
+              loading="lazy" />
           </picture>
           <div class="cs-flex">
             <h3 class="cs-h3">Fast, Reliable, and Ready to Roll</h3>
             <p class="cs-li-text">
-              We work quickly and efficiently to get you back on the road and enjoying your RV
-              life—with dependable service you can count on every time.
+              We work quickly and efficiently to get you back on the road and enjoying your RV life—with dependable
+              service you can count on every time.
             </p>
           </div>
         </li>
@@ -878,44 +789,38 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
       srcset="
                     {% getUrl '/assets/images/why-choose-us-bg.jpg' | resize({ width: 1200, height: 1136  }) | avif %}
                 "
-      type="image/avif"
-    />
+      type="image/avif" />
     <source
       media="(max-width: 600px)"
       srcset="
                     {% getUrl '/assets/images/why-choose-us-bg.jpg' | resize({ width: 1200, height: 1136  }) | webp %}
                 "
-      type="image/webp"
-    />
+      type="image/webp" />
     <source
       media="(max-width: 600px)"
       srcset="
                     {% getUrl '/assets/images/why-choose-us-bg.jpg' | resize({ width: 1200, height: 1136  }) | jpeg %}
                 "
-      type="image/jpeg"
-    />
+      type="image/jpeg" />
     <!--Tablet Image-->
     <source
       media="(min-width: 601)"
       srcset="
                     {% getUrl '/assets/images/why-choose-us-bg.jpg' | resize({ width: 2560 , height:1136  }) | avif %}
                 "
-      type="image/avif"
-    />
+      type="image/avif" />
     <source
       media="(min-width: 601)"
       srcset="
                     {% getUrl '/assets/images/why-choose-us-bg.jpg' | resize({ width: 2560 , height:1136  }) | webp %}
                 "
-      type="image/webp"
-    />
+      type="image/webp" />
     <source
       media="(min-width: 601)"
       srcset="
                     {% getUrl '/assets/images/why-choose-us-bg.jpg' | resize({ width: 2560 , height:1136  }) | jpeg %}
                 "
-      type="image/jpeg"
-    />
+      type="image/jpeg" />
     <img
       src="{% getUrl '/assets/images/why-choose-us-bg.jpg' | resize({ width: 1280 , height: 568  }) | jpeg %}"
       alt="RV in the mountains"
@@ -923,8 +828,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
       height="568"
       loading="lazy"
       decoding="async"
-      aria-hidden="true"
-    />
+      aria-hidden="true" />
   </picture>
 </section>
 
@@ -938,9 +842,9 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
       <span class="cs-topper">Testimonials</span>
       <h2 class="cs-title">Trusted by Thousand of People & Companies</h2>
       <p class="cs-text">
-        Vitae ultricies leo integer malesuada nunc vel. Molestie ac feugiat sed lectus vestibulum
-        mattis ullamcorper velit. Viverra aliquet eget sit amet tellus cras adipiscing. Molestie ac
-        feugiat sed lectus vestibulum mattis ullamcorper velit.
+        Vitae ultricies leo integer malesuada nunc vel. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper
+        velit. Viverra aliquet eget sit amet tellus cras adipiscing. Molestie ac feugiat sed lectus vestibulum mattis
+        ullamcorper velit.
       </p>
     </div>
     <ul class="cs-card-group">
@@ -953,8 +857,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
               decoding="async"
               alt="profile"
               width="50"
-              height="50"
-            />
+              height="50" />
           </picture>
           <span class="cs-name">
             Amanda Jenkins
@@ -962,10 +865,9 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
           </span>
         </div>
         <p class="cs-review">
-          I have been so very blessed to have Rick and Sarah both come into my life! They both have
-          been a godsend have gone above and beyond anything I could have ever asked for! Thank you
-          both for wonderful customer service and going above and beyond with everything y'all have
-          done!
+          I have been so very blessed to have Rick and Sarah both come into my life! They both have been a godsend have
+          gone above and beyond anything I could have ever asked for! Thank you both for wonderful customer service and
+          going above and beyond with everything y'all have done!
         </p>
         <!--Stars-->
         <img
@@ -975,8 +877,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
           decoding="async"
           alt="stars"
           width="108"
-          height="16"
-        />
+          height="16" />
         <span class="cs-desc">Google Reviews</span>
       </li>
       <li class="cs-item">
@@ -988,8 +889,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
               decoding="async"
               alt="profile"
               width="50"
-              height="50"
-            />
+              height="50" />
           </picture>
           <span class="cs-name">
             H B
@@ -997,9 +897,9 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
           </span>
         </div>
         <p class="cs-review">
-          Ricks was such a pleasure to do business with. They are prompt, informative and really
-          professional. They stayed in contact with us throughout the process of pricing and our
-          repair/addition of slide toppers. Highly recommend!!!
+          Ricks was such a pleasure to do business with. They are prompt, informative and really professional. They
+          stayed in contact with us throughout the process of pricing and our repair/addition of slide toppers. Highly
+          recommend!!!
         </p>
         <!--Stars-->
         <img
@@ -1009,8 +909,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
           decoding="async"
           alt="quote icon"
           width="108"
-          height="16"
-        />
+          height="16" />
         <span class="cs-desc">Google Reviews</span>
       </li>
       <li class="cs-item">
@@ -1022,8 +921,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
               decoding="async"
               alt="profile"
               width="50"
-              height="50"
-            />
+              height="50" />
           </picture>
           <span class="cs-name">
             Emileigh B
@@ -1031,10 +929,9 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
           </span>
         </div>
         <p class="cs-review">
-          After buying a new Camper, we immediately had an issue. I called Rick and he was out the
-          next day. He was able to fix my issue within an hour. His prices are beyond fair and an
-          excellent human to interact with. I can’t thank them enough for helping me and my family
-          get everything working.
+          After buying a new Camper, we immediately had an issue. I called Rick and he was out the next day. He was able
+          to fix my issue within an hour. His prices are beyond fair and an excellent human to interact with. I can’t
+          thank them enough for helping me and my family get everything working.
         </p>
         <!--Stars-->
         <img
@@ -1044,8 +941,7 @@ tags: 'sitemap' # content/content.json will make sure that all pages in content/
           decoding="async"
           alt="quote icon"
           width="108"
-          height="16"
-        />
+          height="16" />
         <span class="cs-desc">Google Reviews</span>
       </li>
     </ul>

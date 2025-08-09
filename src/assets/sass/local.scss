@@ -198,6 +198,10 @@
   }
 }
 
+/*-- -------------------------- -->
+<---       Side by Side     -->
+<--- -------------------------- -*/
+
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #sbs-2291 {
@@ -272,7 +276,7 @@
       position: relative;
 
       &::before {
-        content: '';
+        content: "";
         width: calc(8 / 16 * 1rem);
         height: calc(8 / 16 * 1rem);
         margin-top: calc(8 / 16 * 1rem);
@@ -491,7 +495,7 @@
       z-index: 1;
 
       &:before {
-        content: '';
+        content: "";
         width: 100vw;
         height: 1px;
         background: #d2d8df;
@@ -1205,7 +1209,7 @@
 
       &:before {
         /* background color overlay */
-        content: '';
+        content: "";
         position: absolute;
         display: block;
         height: 100%;

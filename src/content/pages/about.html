@@ -4,105 +4,393 @@ description: "Meta description for the page"
 permalink: "/about/"
 ---
 
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.html" %} {% block head %} <link rel="preload" as="image" href="{% getUrl
+"/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}"/> <link rel="preload" as="image" href="{%
+getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}"/>
+<link rel="stylesheet" href="/assets/css/about.css" />
+{% endblock %} {% block body %}
 
-{% block head %}
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}"/>
-    <link rel="stylesheet" href="/assets/css/about.css">
-{% endblock %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
-{% block body %}
-
-    <!-- ============================================ -->
-    <!--                   Banner                     -->
-    <!-- ============================================ -->
-
-    <div id="banner-310">
-        <div class="cs-container">
-            <span class="cs-int-title">About Us</span>
-            <div class="cs-breadcrumbs">
-                <a href="/" class="cs-link">Home</a>
-                <a href="/about/" class="cs-link cs-active">About Us</a>
-            </div>
-        </div>
-        <!--Background Image-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
-        </picture>
+<div id="banner-310">
+  <div class="cs-container">
+    <span class="cs-int-title">About Us</span>
+    <div class="cs-breadcrumbs">
+      <a href="/" class="cs-link">Home</a>
+      <a href="/about/" class="cs-link cs-active">About Us</a>
     </div>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height:
+    600 }) | avif %}" type="image/avif"> <source media="(max-width: 600px)" srcset="{% getUrl
+    "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp"> <source
+    media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) |
+    jpeg %}" type="image/jpeg">
+    <!--Tablet Image-->
+    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height:
+    942 }) | avif %}" type="image/avif"> <source media="(max-width: 1024px)" srcset="{% getUrl
+    "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp"> <source
+    media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) |
+    jpeg %}" type="image/jpeg">
+    <!--Desktop Image-->
+    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height:
+    628 }) | avif %}" type="image/avif"> <source media="(min-width: 1024px)" srcset="{% getUrl
+    "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp"> <source
+    media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) |
+    jpeg %}" type="image/jpeg"> <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 })
+    | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
+  </picture>
+</div>
 
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
 
-    <section id="RPsbs-313">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-image-group">
-                <picture class="cs-picture cs-picture1">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" alt="lawyers" width="522" height="581" decoding="async">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" alt="gavel" width="390" height="376" loading="lazy" decoding="async">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-content">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About CodeStitch</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-quote">
-                    <span class="cs-quote-text">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </span>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="gavel" width="136" height="77">
-                </div>
-                <a href="/contact/" class="cs-button-solid">Get in Touch</a>
-            </div>
+<section id="sbs-2291">
+  <div class="cs-container">
+    <!-- Left Content Section-->
+    <div class="cs-content">
+      <span class="cs-topper">About Us</span>
+      <h2 class="cs-title">25 Years of Experience: Your RV Service Specialists</h2>
+      <p class="cs-text">
+        Rick’s Mobile RV Service has 25 years of experience in camping, Maintaining and servicing your RVs is our
+        passion, so we can get you back to camping. We are experienced and certified professionals in the field of RV
+        Services. Our company is in Gainesville, Georgia, and we offer dedicated and expert services for your
+        recreational vehicles. You can contact us if you want to upgrade or need repairs and/or maintenance for your RV.
+        We want your RV to always be ready for travel.
+      </p>
+      <p class="cs-text">
+        We serve our clients with top-notch maintenance services. Rick’s Mobile RV Service is a family-owned business.
+        Our entire team is professional and skillful, and we will bring your RV to the best possible conditions.
+      </p>
+    </div>
+    <!-- Right Image Section -->
+    <div class="cs-image-group">
+      <!--Floating Box-->
+      <div class="cs-box">
+        <span class="cs-number">100+</span>
+        <div class="cs-flex">
+          <h3 class="cs-heading">RV Services Completed</h3>
+          <span class="cs-desc">Providing quality service in the Gainesville, Georgia area.</span>
         </div>
-    </section>
+      </div>
+      <!--Image-->
+      <picture class="cs-picture">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+                          {% getUrl '/assets/images/about-us.png' | resize({ width: 1136, height: 1062, position: 'attention' }) | avif %}
+                      "
+          type="image/avif" />
+        <source
+          media="(max-width: 600px)"
+          srcset="
+                          {% getUrl '/assets/images/about-us.png' | resize({ width: 1136, height: 1062, position: 'attention' }) | webp %}
+                      "
+          type="image/webp" />
+        <source
+          media="(max-width: 600px)"
+          srcset="
+                          {% getUrl '/assets/images/about-us.png' | resize({ width: 1136, height: 1062, position: 'attention' }) | jpeg %}
+                      "
+          type="image/jpeg" />
+        <!--Tablet Image-->
+        <source
+          media="(min-width: 601px)"
+          srcset="
+                          {% getUrl '/assets/images/about-us.png' | resize({ width: 1260, height: 1260, position: 'attention' }) | avif %}
+                      "
+          type="image/avif" />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+                          {% getUrl '/assets/images/about-us.png' | resize({ width: 1260, height: 1260, position: 'attention' }) | webp %}
+                      "
+          type="image/webp" />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+                          {% getUrl '/assets/images/about-us.png' | resize({ width: 1260, height: 1260, position: 'attention' }) | jpeg %}
+                      "
+          type="image/jpeg" />
+        <img
+          src="{% getUrl '/assets/images/about-us.png' | resize({ width: 630, height: 630, position: 'attention' }) | jpeg %}"
+          alt="traveling rv"
+          width="2250"
+          height="1500"
+          decoding="async"
+          aria-hidden="true" />
+      </picture>
+    </div>
+  </div>
+</section>
 
-    {% include 'sections/cta.html' %}
+<!-- ============================================ -->
+<!--                Why Choose Us                 -->
+<!-- ============================================ -->
 
-{% endblock %}
+<section id="why-choose-1630">
+  <div class="cs-container">
+    <div class="cs-flex">
+      <picture class="cs-picture">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+                          {% getUrl '/assets/images/about-us-4.jpg' | resize({ width: 550, height: 300, position: 'left' }) | avif %}
+                      "
+          type="image/avif" />
+        <source
+          media="(max-width: 600px)"
+          srcset="
+                          {% getUrl '/assets/images/about-us-4.jpg' | resize({ width: 550, height: 300, position: 'left' }) | webp %}
+                      "
+          type="image/webp" />
+        <source
+          media="(max-width: 600px)"
+          srcset="
+                          {% getUrl '/assets/images/about-us-4.jpg' | resize({ width: 550, height: 300, position: 'left' }) | jpeg %}
+                      "
+          type="image/jpeg" />
+        <!--Tablet Image-->
+        <source
+          media="(min-width: 601px)"
+          srcset="
+                          {% getUrl '/assets/images/about-us-4.jpg' | resize({ width: 608, height: 548, position: 'left' }) | avif %}
+                      "
+          type="image/avif" />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+                          {% getUrl '/assets/images/about-us-4.jpg' | resize({ width: 608, height: 548, position: 'left' }) | webp %}
+                      "
+          type="image/webp" />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+                          {% getUrl '/assets/images/about-us-4.jpg' | resize({ width: 608, height: 548, position: 'left' }) | jpeg %}
+                      "
+          type="image/jpeg" />
+        <img
+          src="{% getUrl '/assets/images/about-us-4.jpg' | resize({ width: 608, height: 548, position: 'left' }) | jpeg %}"
+          alt="traveling rv"
+          width="608"
+          height="548"
+          decoding="async"
+          aria-hidden="true" />
+      </picture>
+      <div class="cs-content">
+        <h2 class="cs-title">3 Steps to Hassle-Free RV Care</h2>
+        <p class="cs-text">
+          Are you in need of an RV Service? It is very easy. You just have to follow these simple three steps:
+        </p>
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <picture class="cs-wrapper">
+              <img
+                class="cs-h3-icon"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="/assets/icons/telephone.svg"
+                alt="icon"
+                width="48"
+                height="48" />
+            </picture>
+            <div class="cs-item-content">
+              <h3 class="cs-h3">Call us to discuss your problem or request</h3>
+              <p class="cs-item-text">Discuss your problem with our RV repair, maintenance and upgrade team.</p>
+            </div>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-wrapper">
+              <img
+                class="cs-h3-icon"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="/assets/icons/calendar.svg"
+                alt="icon"
+                width="48"
+                height="48" />
+            </picture>
+            <div class="cs-item-content">
+              <h3 class="cs-h3">Set up an appointment</h3>
+              <p class="cs-item-text">
+                Next, set up an appointment for further discussion and to have your RV serviced.
+              </p>
+            </div>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-wrapper">
+              <img
+                class="cs-h3-icon"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="/assets/icons/rv.svg"
+                alt="icon"
+                width="48"
+                height="48" />
+            </picture>
+            <div class="cs-item-content">
+              <h3 class="cs-h3">Enjoy your RV</h3>
+              <p class="cs-item-text">After our services are done, all you need to do is enjoy your RV.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-311">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-image-group">
+      <picture class="cs-picture cs-picture1">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+                    {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 365, height: 407, position: 'right' }) | avif %}
+                "
+          type="image/avif" />
+        <source
+          media="(max-width: 600px)"
+          srcset="
+                    {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 365, height: 407, position: 'right' }) | webp %}
+                "
+          type="image/webp" />
+        <source
+          media="(max-width: 600px)"
+          srcset="
+                    {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 365, height: 407, position: 'right' }) | jpeg %}
+                "
+          type="image/jpeg" />
+        <!--Tablet Image-->
+        <source
+          media="(min-width: 601px)"
+          srcset="
+                    {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 522, height: 581, position: 'right' }) | avif %}
+                "
+          type="image/avif" />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+                    {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 522, height: 581, position: 'right' }) | webp %}
+                "
+          type="image/webp" />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+                    {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 522, height: 581, position: 'right' }) | jpeg %}
+                "
+          type="image/jpeg" />
+        <img
+          src="{% getUrl '/assets/images/why-choose-us.png' | resize({ width: 522, height: 581, position: 'right' }) | jpeg %}"
+          alt="Circuit breakers"
+          width="400"
+          height="240"
+          decoding="async"
+          aria-hidden="true" />
+      </picture>
+      <picture class="cs-picture cs-picture2">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+                    {% getUrl '/assets/images/service-5.jpg' | resize({ width: 274, height: 264, position: 'attention' }) | avif %}
+                "
+          type="image/avif" />
+        <source
+          media="(max-width: 600px)"
+          srcset="
+                    {% getUrl '/assets/images/service-5.jpg' | resize({ width: 274, height: 264, position: 'attention' }) | webp %}
+                "
+          type="image/webp" />
+        <source
+          media="(max-width: 600px)"
+          srcset="
+                    {% getUrl '/assets/images/service-5.jpg' | resize({ width: 274, height: 264, position: 'attention' }) | jpeg %}
+                "
+          type="image/jpeg" />
+        <!--Tablet Image-->
+        <source
+          media="(min-width: 601px)"
+          srcset="
+                    {% getUrl '/assets/images/service-5.jpg' | resize({ width: 390, height: 376, position: 'attention' }) | avif %}
+                "
+          type="image/avif" />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+                    {% getUrl '/assets/images/service-5.jpg' | resize({ width: 390, height: 376, position: 'attention' }) | webp %}
+                "
+          type="image/webp" />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+                    {% getUrl '/assets/images/service-5.jpg' | resize({ width: 390, height: 376, position: 'attention' }) | jpeg %}
+                "
+          type="image/jpeg" />
+        <img
+          src="{% getUrl '/assets/images/service-5.jpg' | resize({ width: 390, height: 376, position: 'attention' }) | jpeg %}"
+          alt="Circuit breakers"
+          width="400"
+          height="240"
+          decoding="async"
+          aria-hidden="true" />
+      </picture>
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-content">
+      <span class="cs-topper">Services</span>
+      <h2 class="cs-title">What Services Does Rick's Mobile RV Service Provide?</h2>
+      <p class="cs-text">
+        Our Mobile RV Service is here for you. We offer several types of services for your recreational vehicles. Our
+        team is expert at providing the best RV plumbing, electrical, structural, maintenance and upgrade services.
+      </p>
+      <p class="cs-text">
+        Our team is also professional in offering RV appliance installations, A/C and furnace services. We will repair
+        your RV to bring it to the best possible conditions. See list below for some of our services.
+      </p>
+
+      <div class="cs-service-list">
+        <ul>
+          <li>Air Conditioners</li>
+          <li>Furnaces/Heating System</li>
+          <li>Water Heaters</li>
+          <li>Plumbing</li>
+          <li>Electrical</li>
+        </ul>
+        <ul>
+          <li>Awnings</li>
+          <li>Slides</li>
+          <li>Roofs</li>
+          <li>Refrigerators</li>
+          <li>Washer/Dryers</li>
+        </ul>
+        <ul>
+          <li>Toilets</li>
+          <li>Sinks/Faucets</li>
+          <li>L.P. Gas Systems</li>
+          <li>Leveling</li>
+          <li>Waste System</li>
+        </ul>
+      </div>
+      <p class="cs-text">
+        We also offer maintenance and upgrades. We want you to enjoy your RV and the best way to do that is routine
+        maintenance. We offer this along with upgrades to make sure you RV is in the best shape for your travels, where
+        ever they make take you.
+      </p>
+    </div>
+  </div>
+</section>
+
+{% include 'sections/cta.html' %} {% endblock %}
