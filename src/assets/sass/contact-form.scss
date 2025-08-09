@@ -6,7 +6,7 @@
 @media only screen and (min-width: 0rem) {
   #contact-1388 {
     padding: var(--sectionPadding);
-    background-color: var(--lighter);
+    background-color: var(--light);
     position: relative;
     z-index: 1;
 
@@ -37,6 +37,19 @@
 
     .cs-title {
       max-width: 23ch;
+    }
+
+    .cs-form-header {
+      text-align: center;
+      width: 100%;
+    }
+
+    .cs-form-sub-title {
+      // max-width: 30ch;
+      width: 100%;
+      text-align: center;
+      margin-bottom: calc(16 / 16 * 1rem);
+      font-weight: 400;
     }
 
     .cs-text {
@@ -127,8 +140,9 @@
       padding: clamp(1.5rem, 5.18vw, 3rem) clamp(1rem, 4vw, 3rem);
       /* prevents flexbox from affecting height and width */
       box-sizing: border-box;
+      border-top: 8px solid var(--primary);
       background-color: var(--white);
-      border-radius: var(--borderRounded);
+      border-radius: var(--borderRoundedLg);
       box-shadow: var(--shadow);
       display: flex;
       justify-content: space-between;
@@ -177,7 +191,7 @@
       }
     }
 
-    input[type='file'] {
+    input[type="file"] {
       display: none;
     }
 
@@ -249,10 +263,6 @@
       gap: calc(12 / 16 * 1rem);
       margin-bottom: calc(24 / 16 * 1rem);
     }
-
-    .cs-submit {
-      width: auto;
-    }
   }
 }
 
@@ -262,10 +272,6 @@
     .cs-form {
       width: 46%;
       max-width: calc(578 / 16 * 1rem);
-    }
-
-    .cs-submit {
-      width: auto;
     }
   }
 }
