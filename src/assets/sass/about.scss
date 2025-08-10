@@ -248,6 +248,9 @@
       .cs-box {
         background-color: var(--accent);
       }
+      .cs-number {
+        color: var(--white);
+      }
     }
   }
 }
@@ -452,6 +455,7 @@
 @media only screen and (min-width: 0rem) {
   body.dark-mode {
     #why-choose-1630 {
+      background-color: var(--dark);
       .cs-title,
       .cs-text,
       .cs-h3,
@@ -638,6 +642,7 @@
 @media only screen and (min-width: 0rem) {
   body.dark-mode {
     #sbs-311 {
+      background-color: var(--medium);
       .cs-image-group {
         &:before,
         &:after {
@@ -646,13 +651,9 @@
       }
 
       .cs-picture2 {
-        background-color: var(--dark);
+        background-color: var(--medium);
         /* 6px - 12px */
-        border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
-      }
-
-      .cs-topper {
-        color: var(--primaryLight);
+        border: clamp(0.375em, 1.5vw, 0.75em) solid var(--medium);
       }
 
       .cs-title,
