@@ -289,7 +289,7 @@
 @media only screen and (min-width: 0rem) {
   body.dark-mode {
     #contact-1388 {
-      background-color: var(--medium);
+      background-color: var(--dark);
       .cs-title,
       .cs-text,
       .cs-header,
@@ -318,21 +318,21 @@
       }
 
       .cs-file-upload {
-        background-color: #4f4f4f;
-        border-color: var(--secondary);
+        background-color: var(--accent);
+        border-color: var(--primary);
         color: var(--white);
 
         &:hover {
-          background-color: var(--secondary);
+          background-color: var(--primary);
           color: #000;
         }
       }
 
       .cs-input {
-        background-color: #4f4f4f;
-        color: #fff;
+        background-color: var(--white);
+        color: var(--bodyTextColor);
         &::placeholder {
-          color: #fff;
+          color: var(--bodyTextColor);
           opacity: 0.8;
         }
       }

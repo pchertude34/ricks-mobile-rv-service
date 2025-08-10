@@ -18,9 +18,14 @@
           height="32" />
         {# {{ client.name }} #}
       </a>
-      {#
+
       <div class="cs-social">
-        <a class="cs-social-link" aria-label="visit facebook profile" href="">
+        <a
+          class="cs-social-link"
+          aria-label="visit facebook profile"
+          rel="noopener noreferrer"
+          target="_blank"
+          href="{{ client.socials.facebook }} ">
           <img
             class="cs-social-img"
             aria-hidden="true"
@@ -31,18 +36,13 @@
             width="11"
             height="11" />
         </a>
-        <a class="cs-social-link" aria-label="visit twitter profile" href="">
-          <img
-            class="cs-social-img"
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Finstragm-grey3.svg"
-            alt="twitter"
-            width="6"
-            height="11" />
-        </a>
-        <a class="cs-social-link" aria-label="visit instagram profile" href="">
+
+        <a
+          class="cs-social-link"
+          aria-label="visit instagram profile"
+          rel="noopener noreferrer"
+          target="_blank"
+          href="{{ client.socials.instagram }}">
           <img
             class="cs-social-img"
             aria-hidden="true"
@@ -54,7 +54,6 @@
             height="11" />
         </a>
       </div>
-      #}
     </div>
     <!-- Links -->
     <div class="cs-ul-wrapper">
@@ -67,13 +66,24 @@
           <a class="cs-link" href="/about/">About</a>
         </li>
         <li class="cs-li">
-          <a class="cs-link" href="/services/">Services</a>
-        </li>
-
-        <li class="cs-li">
-          <a class="cs-link" href="/contact/">Contact</a>
+          <a class="cs-link" href="/contact-us/">Contact</a>
         </li>
       </ul>
+    </div>
+    <div class="cs-ul-wrapper">
+      <span class="cs-header">Services</span>
+      <li class="cs-li">
+        <a href="/rv-plumbing-services/" class="cs-link">RV Plumbing Services</a>
+      </li>
+      <li class="cs-li">
+        <a href="/rv-electrical-services/" class="cs-link">RV Electrical Services</a>
+      </li>
+      <li class="cs-li">
+        <a href="/rv-applicances-a-c-heater/" class="cs-link">RV Appliances, A/C, Furnace</a>
+      </li>
+      <li class="cs-li">
+        <a href="/rv-upgrades-maintenance/" class="cs-link">RV Upgrades & Maintenance</a>
+      </li>
     </div>
     <div class="cs-ul-wrapper">
       <!-- Contact Info -->
@@ -107,6 +117,20 @@
               height="20" />
             {{ client.email }}
           </a>
+        </li>
+        <li class="cs-li">
+          <span class="cs-link">
+            <img
+              class="cs-contact-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/icons/clock.svg"
+              alt="email icon"
+              width="20"
+              height="20" />
+            {{ client.hours }}
+          </span>
         </li>
       </ul>
     </div>

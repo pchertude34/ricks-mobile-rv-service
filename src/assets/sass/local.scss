@@ -441,6 +441,9 @@
       .cs-box {
         background-color: var(--accent);
       }
+      .cs-number {
+        color: var(--white);
+      }
     }
   }
 }
@@ -905,6 +908,7 @@
 @media only screen and (min-width: 0rem) {
   body.dark-mode {
     #sbsr-312 {
+      background-color: var(--dark);
       .cs-image-group {
         &:before,
         &:after {
