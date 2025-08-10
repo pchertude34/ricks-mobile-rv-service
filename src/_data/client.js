@@ -13,8 +13,8 @@ module.exports = {
     mapLink: "https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6",
   },
   socials: {
-    facebook: "https://www.facebook.com/",
-    instagram: "https://www.instagram.com/",
+    facebook: "https://www.facebook.com/profile.php?id=61550127822008",
+    instagram: "https://www.instagram.com/ricksmobilervservice/",
   },
   hours: "7 days a week 9-7 (Winter 9-5)",
   //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included

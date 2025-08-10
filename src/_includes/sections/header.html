@@ -42,7 +42,7 @@
       </div>
 
       <div class="cs-top-social">
-        <a href="" class="cs-social-link">
+        <a href="{{ client.socials.facebook }}" rel="noopener noreferrer" target="_blank" class="cs-social-link">
           <img
             class="cs-social-icon"
             src="/assets/icons/facebook.svg"
@@ -52,7 +52,7 @@
             aria-hidden="true"
             decoding="async" />
         </a>
-        <a href="" class="cs-social-link">
+        <a href="{{ client.socials.instagram }}" rel="noopener noreferrer" target="_blank" class="cs-social-link">
           <img
             class="cs-social-icon"
             src="/assets/icons/instagram.svg"
@@ -90,8 +90,48 @@
             <a href="/about/" class="cs-li-link {% if page.url == '/about/' %}cs-active{% endif %}"> About </a>
           </li>
           <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
-          <li class="cs-li">
-            <a href="/services/" class="cs-li-link {% if page.url == '/services/' %}cs-active{% endif %}"> Services </a>
+          <li class="cs-li cs-dropdown" tabindex="0">
+            <span class="cs-li-link">
+              Services
+              <img
+                class="cs-drop-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chev-down.svg"
+                alt="dropdown icon"
+                width="15"
+                height="15"
+                decoding="async"
+                aria-hidden="true" />
+            </span>
+            <ul class="cs-drop-ul">
+              <li class="cs-drop-li">
+                <a
+                  href="/rv-plumbing-services/"
+                  class="cs-li-link cs-drop-link {% if page.url == '/rv-plumbing-services/' %}cs-active{% endif %}"
+                  >RV Plumbing Services</a
+                >
+              </li>
+              <li class="cs-drop-li">
+                <a
+                  href="/rv-electrical-services/"
+                  class="cs-li-link cs-drop-link {% if page.url == '/rv-electrical-services"/' %}cs-active{% endif %}"
+                  >RV Electrical Services</a
+                >
+              </li>
+              <li class="cs-drop-li">
+                <a
+                  href="/rv-applicances-a-c-heater/"
+                  class="cs-li-link cs-drop-link {% if page.url == '/rv-applicances-a-c-heater/' %}cs-active{% endif %}"
+                  >RV Appliances, A/C, Furnace</a
+                >
+              </li>
+              <li class="cs-drop-li">
+                <a
+                  href="/rv-upgrades-maintenance/"
+                  class="cs-li-link cs-drop-link {% if page.url == '/rv-upgrades-maintenance/' %}cs-active{% endif %}"
+                  >RV Upgrades & Maintenance</a
+                >
+              </li>
+            </ul>
           </li>
           <li class="cs-li">
             <a href="/contact/" class="cs-li-link {% if page.url == '/contact/' %}cs-active{% endif %}"> Contact </a>
