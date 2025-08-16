@@ -9,61 +9,61 @@
     <source
       media="(max-width: 600px)"
       srcset="
-                {% getUrl '/assets/images/banner.jpg' | resize({ width: 640, height:472, position: 'attention', fit: 'inside'  }) | avif %}
+                {% getUrl page.bannerImg | resize({ width: 640, height:472, position: 'attention', fit: 'inside'  }) | avif %}
             "
       type="image/avif" />
     <source
       media="(max-width: 600px)"
       srcset="
-                {% getUrl '/assets/images/banner.jpg' | resize({ width: 640, height:472, position: 'attention', fit: 'inside'  }) | webp %}
+                {% getUrl page.bannerImg | resize({ width: 640, height:472, position: 'attention', fit: 'inside'  }) | webp %}
             "
       type="image/webp" />
     <source
       media="(max-width: 600px)"
       srcset="
-                {% getUrl '/assets/images/banner.jpg' | resize({ width: 640, height:472, position: 'attention', fit: 'inside'  }) | jpeg %}
+                {% getUrl page.bannerImg | resize({ width: 640, height:472, position: 'attention', fit: 'inside'  }) | jpeg %}
             "
       type="image/jpeg" />
     <!--Tablet Image-->
     <source
       media="(max-width: 1024px)"
       srcset="
-                {% getUrl '/assets/images/banner.jpg' | resize({ width:1246, height:472, position: 'attention', fit: 'inside'  }) | avif %}
+                {% getUrl page.bannerImg | resize({ width:1246, height:472, position: 'attention', fit: 'inside'  }) | avif %}
             "
       type="image/avif" />
     <source
       media="(max-width: 1024px)"
       srcset="
-                {% getUrl '/assets/images/banner.jpg' | resize({ width:1246, height:472, position: 'attention', fit: 'inside'  }) | webp %}
+                {% getUrl page.bannerImg | resize({ width:1246, height:472, position: 'attention', fit: 'inside'  }) | webp %}
             "
       type="image/webp" />
     <source
       media="(max-width: 1024px)"
       srcset="
-                {% getUrl '/assets/images/banner.jpg' | resize({ width:1246, height:472, position: 'attention', fit: 'inside'  }) | jpeg %}
+                {% getUrl page.bannerImg | resize({ width:1246, height:472, position: 'attention', fit: 'inside'  }) | jpeg %}
             "
       type="image/jpeg" />
     <!--Desktop Image-->
     <source
       media="(min-width: 1024px)"
       srcset="
-                {% getUrl '/assets/images/banner.jpg' | resize({ width:2500, height:1667, position: 'attention', fit: 'inside'  }) | avif %}
+                {% getUrl page.bannerImg | resize({ width:2500, height:1667, position: 'attention', fit: 'inside'  }) | avif %}
             "
       type="image/avif" />
     <source
       media="(min-width: 1024px)"
       srcset="
-                {% getUrl '/assets/images/banner.jpg' | resize({ width:2500, height:1667, position: 'attention', fit: 'inside'  }) | webp %}
+                {% getUrl page.bannerImg | resize({ width:2500, height:1667, position: 'attention', fit: 'inside'  }) | webp %}
             "
       type="image/webp" />
     <source
       media="(min-width: 1024px)"
       srcset="
-                {% getUrl '/assets/images/banner.jpg' | resize({ width:2500, height:1667, position: 'attention', fit: 'inside'  }) | jpeg %}
+                {% getUrl page.bannerImg | resize({ width:2500, height:1667, position: 'attention', fit: 'inside'  }) | jpeg %}
             "
       type="image/jpeg" />
     <img
-      src="{% getUrl '/assets/images/banner.jpg' | resize({ width:2500 , height:1667  }) | jpeg %}"
+      src="{% getUrl page.bannerImg | resize({ width:2500 , height:1667  }) | jpeg %}"
       alt="RV on the lake"
       width="2500"
       height="1667"
