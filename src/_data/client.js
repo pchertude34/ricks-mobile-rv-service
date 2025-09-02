@@ -1,6 +1,6 @@
 module.exports = {
   name: "Rick's Mobile RV Service",
-  email: "service@ricksmobilervservice.com",
+  email: "ricksmobilervservice@gmail.com",
   phoneForTel: "770-540-7462",
   phoneFormatted: "(770) 540-7462",
   address: {
